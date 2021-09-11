@@ -8,11 +8,13 @@ import { MatCardModule } from "@angular/material/card";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
+import { ActivityComponent } from './components/activity/activity.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		ActivityCardComponent,
+  ActivityComponent,
 	],
   imports: [
     BrowserModule,
