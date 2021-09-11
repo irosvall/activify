@@ -11,7 +11,8 @@ export class InMemoryActivityDataService implements InMemoryDbService {
       {
         id: 1,
         title: "Mountain biking",
-        description: "Take a rider in a nice valley.",
+        summary: "Take a ride with me in a nice valley.",
+        description: "We will go by bike on a moderately difficult bike trail.",
         location: "Hudiksvall",
         duration: 80,
         photos: [
@@ -26,7 +27,8 @@ export class InMemoryActivityDataService implements InMemoryDbService {
       {
         id: 2,
         title: "Hiking",
-        description: "Travel the road with me to a waterfall.",
+        summary: "Travel the road with me to a waterfall.",
+        description: "The big waterfall of Ljusdal is a must see for everyone!",
         location: "Ljusdal",
         duration: 100,
         photos: [
