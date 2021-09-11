@@ -30,7 +30,10 @@ export class ActivityDetailsComponent implements OnInit {
     const id = parseInt(this.route.snapshot.paramMap.get('id')!, 10);
 
     this.activityService.getActivity(id)
-      .subscribe(activity => this.activity = activity);
+      .subscribe(activity => {
+        this.activity = activity;
+        this.setIfActivityIsFavorite();
+      });
   }
 
   toggleToFavorites(): void {
