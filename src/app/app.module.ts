@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { InMemoryActivityDataService } from './services/in-memory-activity-data.service';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ActivityCardComponent } from './components/activity-card/activity-card.component';
