@@ -20,6 +20,7 @@ export class InMemoryActivityDataService implements InMemoryDbService {
         host: {
           name: "John Doe",
           username: "user1",
+          profilePicture: "assets/faces/john.jpg",
         }
       },
       {
@@ -34,6 +35,7 @@ export class InMemoryActivityDataService implements InMemoryDbService {
         host: {
           name: "Jane Doe",
           username: "user2",
+          profilePicture: "assets/faces/jane.jpg",
         }
       },
     ];
