@@ -1,3 +1,11 @@
-<app-activity-card *ngFor="let activity of activities"
-  [activity]="activity">
-</app-activity-card>
+<div *ngIf="activities.length > 0; else noActivitiesFound">
+  <app-activity-card *ngFor="let activity of activities"
+    [activity]="activity">
+  </app-activity-card>
+</div>
+
+<ng-template #noActivitiesFound>
+  <h3> No activities found in {{town}}. </h3>
+  <p>Take this oppertunity to create your own activities in {{town}}!
+    Or seach at another place.</p>
+</ng-template>

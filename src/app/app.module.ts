@@ -15,10 +15,12 @@ import { MatIconModule } from "@angular/material/icon";
 import { ActivityDetailsComponent } from './components/activity/activity-details.component';
 import { ActivityListComponent } from './components/activity-list/activity-list.component';
 import { HeaderBarComponent } from './components/header-bar/header-bar.component';
-import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import {MatDividerModule} from "@angular/material/divider";
 import { FrontPageComponent } from './components/front-page/front-page.component';
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
 	declarations: [
@@ -46,6 +48,10 @@ import { FrontPageComponent } from './components/front-page/front-page.component
     ),
     MatDividerModule,
     MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
 	providers: [],
 	bootstrap: [AppComponent],

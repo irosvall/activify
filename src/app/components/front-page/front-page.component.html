@@ -1,6 +1,15 @@
 <div class="header">
   <h1>Activites for everyone, by anyone</h1>
   <h2>Discover activities in the places you visit, by the people who know it</h2>
+  <form [formGroup]="searchForm" (ngSubmit)="onSubmit()" (keydown.enter)="onSubmit()" class="place-search">
+    <mat-form-field class="place-search" appearance="fill">
+      <mat-label>Where are we going?</mat-label>
+      <button mat-button matSuffix>
+        <mat-icon>explore</mat-icon>
+      </button>
+      <input formControlName="destination" type="search" matInput maxlength="256">
+    </mat-form-field>
+  </form>
 </div>
 
 <h1>Popular activities</h1>
