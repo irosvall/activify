@@ -21,6 +21,7 @@ export class InMemoryActivityDataService implements InMemoryDbService {
         host: {
           name: "John Doe",
           username: "user1",
+          presentation: "I am a happy guy who likes mountain biking. After several years of competing successfully I am now looking to share my skills and meet awesome new people.",
           profilePicture: "assets/faces/john.jpg",
         }
       },

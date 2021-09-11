@@ -14,6 +14,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { ActivityDetailsComponent } from './components/activity/activity-details.component';
 import { ActivityListComponent } from './components/activity-list/activity-list.component';
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
 	declarations: [
@@ -22,22 +23,23 @@ import { ActivityListComponent } from './components/activity-list/activity-list.
     ActivityDetailsComponent,
     ActivityListComponent,
 	],
-	imports: [
-		BrowserModule,
+  imports: [
+    BrowserModule,
     HttpClientModule,
-		AppRoutingModule,
-		MatCardModule,
-		BrowserAnimationsModule,
-		MatIconModule,
+    AppRoutingModule,
+    MatCardModule,
+    BrowserAnimationsModule,
+    MatIconModule,
     MatButtonModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
     HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryActivityDataService, { dataEncapsulation: false }
-    )
-	],
+      InMemoryActivityDataService, {dataEncapsulation: false}
+    ),
+    MatDividerModule
+  ],
 	providers: [],
 	bootstrap: [AppComponent],
 })

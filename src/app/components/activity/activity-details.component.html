@@ -1,12 +1,32 @@
-<mat-card *ngIf="activity" class="card">
-  <mat-card-header>
-    <mat-card-title>Mountainbiking</mat-card-title>
-    <mat-card-subtitle>Valley by the coast</mat-card-subtitle>
-    <img mat-card-avatar src="assets/faces/john.jpg" alt="avatar">
-  </mat-card-header>
-  <img mat-card-image class="card-image" src="assets/activities/bike.jpg" alt="activity">
-  <mat-card-actions class="card-actions" align="end">
-    <mat-icon>favorite_border</mat-icon>
-    <mat-icon>share</mat-icon>
-  </mat-card-actions>
-</mat-card>
+<div class="activity-details-container" *ngIf="activity">
+  <mat-card class="main-card">
+    <img mat-card-image class="card-image" src="{{activity.photos[0]}}" alt="activity">
+    <mat-card-title>{{activity.title}}</mat-card-title>
+    <mat-card-subtitle>{{activity.location}}</mat-card-subtitle>
+    <mat-card-content class="card-content">
+      <p>{{activity.description}}</p>
+    </mat-card-content>
+  </mat-card>
+
+
+  <button mat-flat-button color="primary" class="favorite-button">
+    Add to favorites <mat-icon>favorite_border</mat-icon>
+  </button>
+
+  <mat-card class="host-card">
+    <mat-card-header>
+      <mat-card-title>Meet {{activity.host.name}}, your activity host</mat-card-title>
+      <img mat-card-avatar src="{{activity.host.profilePicture}}" alt="avatar">
+    </mat-card-header>
+    <mat-card-content class="card-content">
+      <p>{{activity.host.presentation}}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="details-footer-fixed">
+    <div class="details-footer">
+      <span class="price">130 kr</span>
+      <button mat-flat-button color="primary" class="contact-button">Contact host</button>
+    </div>
+  </div>
+</div>
