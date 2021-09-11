@@ -30,9 +30,9 @@ button {
 }
 
 .details-footer-fixed {
-  border-top: 1px solid #dcdcdc;
   position: fixed;
-  bottom: 0;
+  border-top: 1px solid #9f9f9f;
+  bottom: -1px;
   left: 0;
   right: 0;
 }
