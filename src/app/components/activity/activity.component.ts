@@ -7,7 +7,7 @@ import { Activity } from "../../models/activity";
   styleUrls: ['./activity.component.css']
 })
 export class ActivityComponent implements OnInit {
-  public activity: Activity;
+  public activity: Activity | undefined;
 
   constructor() { }
 
