@@ -1,3 +1,5 @@
+import { Member } from "./member";
+
 export interface Activity {
   id: number,
 	title: string;
@@ -8,4 +10,5 @@ export interface Activity {
 	duration: number,
 	minimumPeople?: number,
 	maximumPeople?: number,
+  host: Member,
 }

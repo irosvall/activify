@@ -1,7 +1,6 @@
 export interface Member {
 	username: string;
-	firstName: string;
-	lastName: string;
+	name: string;
 	presentation?: string;
 	profilePicture?: string;
 }

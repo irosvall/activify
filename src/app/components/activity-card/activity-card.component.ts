@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Activity } from "../../models/activity";
 
 @Component({
   selector: 'app-activity-card',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./activity-card.component.css']
 })
 export class ActivityCardComponent implements OnInit {
+
+  @Input() activity: Activity | undefined;
 
   constructor() { }
 
