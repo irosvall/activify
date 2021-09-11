@@ -21,6 +21,7 @@ import { FrontPageComponent } from './components/front-page/front-page.component
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { FavoriteActivitiesComponent } from './components/favorite-activities/favorite-activities.component';
 
 @NgModule({
 	declarations: [
@@ -30,6 +31,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     ActivityListComponent,
     HeaderBarComponent,
     FrontPageComponent,
+    FavoriteActivitiesComponent,
   ],
   imports: [
     BrowserModule,
