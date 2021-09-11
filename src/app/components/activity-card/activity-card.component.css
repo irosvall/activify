@@ -10,3 +10,12 @@
   margin-top: -20px;
   padding: 0 5px;
 }
+
+.card-actions {
+  display: flex;
+  justify-content: end;
+}
+
+.left {
+  margin-right: auto;
+}
