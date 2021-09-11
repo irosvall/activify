@@ -18,6 +18,7 @@ import { HeaderBarComponent } from './components/header-bar/header-bar.component
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import {MatDividerModule} from "@angular/material/divider";
+import { FrontPageComponent } from './components/front-page/front-page.component';
 
 @NgModule({
 	declarations: [
@@ -26,14 +27,15 @@ import {MatDividerModule} from "@angular/material/divider";
     ActivityDetailsComponent,
     ActivityListComponent,
     HeaderBarComponent,
-	],
-	imports: [
-		BrowserModule,
+    FrontPageComponent,
+  ],
+  imports: [
+    BrowserModule,
     HttpClientModule,
-		AppRoutingModule,
-		MatCardModule,
-		BrowserAnimationsModule,
-		MatIconModule,
+    AppRoutingModule,
+    MatCardModule,
+    BrowserAnimationsModule,
+    MatIconModule,
     MatButtonModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
