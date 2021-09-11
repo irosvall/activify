@@ -14,6 +14,9 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { ActivityComponent } from './components/activity/activity.component';
 import { ActivityListComponent } from './components/activity-list/activity-list.component';
+import { HeaderBarComponent } from './components/header-bar/header-bar.component';
+import { MatAutocompleteModule } from "@angular/material/autocomplete";
+import { MatToolbarModule } from "@angular/material/toolbar";
 
 @NgModule({
 	declarations: [
@@ -21,23 +24,26 @@ import { ActivityListComponent } from './components/activity-list/activity-list.
 		ActivityCardComponent,
   ActivityComponent,
   ActivityListComponent,
+  HeaderBarComponent,
 	],
-	imports: [
-		BrowserModule,
+  imports: [
+    BrowserModule,
     HttpClientModule,
-		AppRoutingModule,
-		MatCardModule,
-		BrowserAnimationsModule,
-		MatIconModule,
+    AppRoutingModule,
+    MatCardModule,
+    BrowserAnimationsModule,
+    MatIconModule,
     MatButtonModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
     HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryActivityDataService, { dataEncapsulation: false }
-    )
-	],
+      InMemoryActivityDataService, { dataEncapsulation: false },
+    ),
+    MatAutocompleteModule,
+    MatToolbarModule,
+  ],
 	providers: [],
 	bootstrap: [AppComponent],
 })
