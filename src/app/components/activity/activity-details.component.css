@@ -3,6 +3,15 @@ mat-card {
   padding-bottom: 3em;
 }
 
+carousel {
+  height: 300px !important;
+  width: 100%;
+}
+
+.carousel-image {
+  object-fit: cover !important;
+}
+
 .activity-details-container {
   padding-bottom: 64px;
 }

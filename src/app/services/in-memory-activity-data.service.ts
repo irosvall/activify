@@ -17,6 +17,9 @@ export class InMemoryActivityDataService implements InMemoryDbService {
         duration: 80,
         photos: [
           "assets/activities/bike.jpg",
+          "assets/activities/bike2.jpg",
+          "assets/activities/bike3.jpg",
+          "assets/activities/bike.jpg",
         ],
         host: {
           name: "John Doe",

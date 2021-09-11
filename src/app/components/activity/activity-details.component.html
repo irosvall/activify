@@ -1,6 +1,16 @@
 <div class="activity-details-container" *ngIf="activity">
+  <carousel
+    [objectFit]="'cover'"
+    [cellWidth]="'100%'"
+    [arrows]="false"
+    [autoplay]="true"
+    [dots]="true"
+    [loop]="true">
+    <div *ngFor="let photo of activity.photos" class="carousel-cell">
+      <img class="carousel-image" src="{{photo}}" alt="activity photo" >
+    </div>
+  </carousel>
   <mat-card class="main-card">
-    <img mat-card-image class="card-image" src="{{activity.photos[0]}}" alt="activity">
     <mat-card-title>{{activity.title}}</mat-card-title>
     <mat-card-subtitle>{{activity.location}}</mat-card-subtitle>
     <mat-card-content class="card-content">

@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Activity } from "../../models/activity";
 import { ActivityService } from "../../services/activity.service";
-import {FavoriteActivityService} from "../../services/favorite.service";
+import { FavoriteActivityService } from "../../services/favorite.service";
 
 
 @Component({
