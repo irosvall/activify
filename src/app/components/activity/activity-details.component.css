@@ -1,22 +1,18 @@
 mat-card {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  margin: 16px;
 }
 
 .activity-details-container {
   padding-bottom: 64px;
 }
 
-.mat-card:not([class*=mat-elevation-z]) {
-  box-shadow: none;
-}
-
 button {
   font-size: 1.7em;
 }
 
-.main-card {
-  padding-top: 16px;
+.card-actions button {
+  margin-top: -32px;
+  padding: 0 5px;
 }
 
 .details-footer-fixed {

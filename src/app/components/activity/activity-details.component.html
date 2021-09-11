@@ -2,21 +2,30 @@
   <mat-card class="main-card">
     <img mat-card-image class="card-image" src="{{activity.photos[0]}}" alt="activity">
     <mat-card-title>{{activity.title}}</mat-card-title>
-    <mat-card-subtitle>{{activity.location}}</mat-card-subtitle>
+    <mat-card-subtitle>
+      <mat-icon inline>place</mat-icon>
+      {{activity.location}}
+    </mat-card-subtitle>
     <mat-card-content class="card-content">
       <p>{{activity.description}}</p>
     </mat-card-content>
+    <mat-card-actions class="card-actions" align="end">
+      <button (click)="toggleToFavorites()" mat-icon-button aria-label="Icon-button with heart icon">
+        <mat-icon>{{isFavorite ? 'favorite' : 'favorite_border'}}</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="Icon-button with heart icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-card-actions>
   </mat-card>
-
-
-  <button (click)="toggleToFavorites()" mat-flat-button color="primary" class="favorite-button">
-    <span *ngIf="!isFavorite">Add to favorites <mat-icon inline>favorite_border</mat-icon></span>
-    <span *ngIf="isFavorite">Remove from favorites <mat-icon>favorite</mat-icon></span>
-  </button>
 
   <mat-card class="host-card">
     <mat-card-header>
       <mat-card-title>Meet {{activity.host.name}}, your activity host</mat-card-title>
+      <mat-card-subtitle>
+        <mat-icon inline>star_border</mat-icon>
+        (4.5)
+      </mat-card-subtitle>
       <img mat-card-avatar src="{{activity.host.profilePicture}}" alt="avatar">
     </mat-card-header>
     <mat-card-content class="card-content">
