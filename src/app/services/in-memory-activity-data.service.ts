@@ -10,23 +10,23 @@ export class InMemoryActivityDataService implements InMemoryDbService {
     const activities: Activity[] = [
       {
         id: 1,
-        title: "Mountain biking",
-        summary: "Take a ride with me in a nice valley.",
-        description: "We will go by bike on a moderately difficult bike trail.",
+        title: "Mountain biking - beginner",
+        summary: "Learn the basics of mountain biking by cycling though a moderately difficult terrain.",
+        description: "We will gather at the eastern part of Hudiksvall where we will first go through the basics. When you feel ready we will begin the ride though a marked trail for beginners. ",
+        extraInformation: "Bring your own helmet and plenty of water. And for an addition fee I'll lend you one of my bikes.",
         location: "Hudiksvall",
-        duration: 80,
+        duration: 300,
         photos: [
           "assets/activities/bike.jpg",
           "assets/activities/bike2.jpg",
-          "assets/activities/bike3.jpg",
-          "assets/activities/bike.jpg",
+          "assets/activities/forrest.jpg",
         ],
         host: {
           name: "John Doe",
           username: "user1",
-          presentation: "I am a happy guy who likes mountain biking. After several years of competing successfully I am now looking to share my skills and meet awesome new people.",
+          presentation: "I'm a happy guy who likes mountain biking. I'm passionate about sharing my passions.",
           profilePicture: "assets/faces/john.jpg",
-        }
+        },
       },
       {
         id: 2,

@@ -17,7 +17,10 @@
       {{activity.location}}
     </mat-card-subtitle>
     <mat-card-content class="card-content">
+      <p>{{activity.summary}}</p>
       <p>{{activity.description}}</p>
+      <h2>Good to know</h2>
+      <p>{{activity.extraInformation}}</p>
     </mat-card-content>
     <mat-card-actions class="card-actions" align="end">
       <button (click)="toggleToFavorites()" mat-icon-button aria-label="Icon-button with heart icon">
