@@ -1,4 +1,5 @@
 .card {
+  margin: 15px
 }
 
 .card-image {
@@ -6,7 +7,7 @@
   object-fit: cover;
 }
 
-.card-actions mat-icon {
+.card-actions button {
   margin-top: -20px;
   padding: 0 5px;
 }
