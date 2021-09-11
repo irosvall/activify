@@ -13,6 +13,7 @@ import {FavoriteActivityService} from "../../services/favorite.service";
 })
 export class ActivityDetailsComponent implements OnInit {
   public activity: Activity | undefined;
+  public isFavorite: boolean = false;
 
   constructor(
     private readonly route: ActivatedRoute,
@@ -22,6 +23,7 @@ export class ActivityDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getActivity();
+    this.setIfActivityIsFavorite();
   }
 
   getActivity(): void {
@@ -31,9 +33,16 @@ export class ActivityDetailsComponent implements OnInit {
       .subscribe(activity => this.activity = activity);
   }
 
-  addToFavorites(): void {
+  toggleToFavorites(): void {
     if (this.activity !== undefined) {
       this.favoriteActivityService.toggleFavoriteActivity(this.activity);
+      this.isFavorite = !this.isFavorite;
+    }
+  }
+
+  private setIfActivityIsFavorite(): void {
+    if (this.activity !== undefined) {
+      this.isFavorite = this.favoriteActivityService.isFavorite(this.activity);
     }
   }
 }

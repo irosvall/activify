@@ -9,8 +9,9 @@
   </mat-card>
 
 
-  <button (click)="addToFavorites()" mat-flat-button color="primary" class="favorite-button">
-    Add to favorites <mat-icon>favorite_border</mat-icon>
+  <button (click)="toggleToFavorites()" mat-flat-button color="primary" class="favorite-button">
+    <span *ngIf="!isFavorite">Add to favorites <mat-icon>favorite_border</mat-icon></span>
+    <span *ngIf="isFavorite">Remove from favorites <mat-icon>favorite</mat-icon></span>
   </button>
 
   <mat-card class="host-card">
