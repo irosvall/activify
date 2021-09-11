@@ -30,17 +30,24 @@ export class InMemoryActivityDataService implements InMemoryDbService {
       },
       {
         id: 2,
-        title: "Hiking",
-        summary: "Travel the road with me to a waterfall.",
-        description: "The big waterfall of Ljusdal is a must see for everyone!",
+        title: "Hiking to a waterfall",
+        summary: "Travel the road with me to an amazing waterfall.",
+        description: "The big waterfall of Ljusdal is a must see for everyone! The trail to the waterfall takes about 30 minutes. Going there you'll walk over wooden bridges and nature roads. It makes you feel close to the nature. Once we are there we'll eat some 'fika' and emjoy the waterfall for around 40 mins or whatever feels right in the moment. I have all the little facts about plants and animals in the area, and I can pinpoint bird species for the interested. The activity is suited for any age that are steady on the foot.",
         location: "Ljusdal",
         duration: 100,
         photos: [
           "assets/activities/waterfall.jpg",
+          "assets/activities/forrest-track.jpg",
+          "assets/activities/forrest2.jpg",
+          "assets/activities/forrest.jpg",
         ],
+        minimumPeople: 1,
+        maximumPeople: 15,
+        extraInformation: "Wear clothes suitable for the weather. Remember that the paths can be slippery, so a good pair of shoes can be handy.",
         host: {
           name: "Jane Doe",
           username: "user2",
+          presentation: "I am a nature loving person. I know all about every bird species of Sweden and can happily talk about them all. Ljusdal is my hometown and I know much history about it. Don't hesitate to contact me for a tour!",
           profilePicture: "assets/faces/jane.jpg",
         }
       },
