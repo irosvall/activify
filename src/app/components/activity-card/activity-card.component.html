@@ -12,8 +12,9 @@
   </mat-card-content>
   <img (click)="onClickedActivity()" mat-card-image class="card-image" src="{{activity.photos[0]}}" alt="activity">
   <mat-card-actions class="card-actions">
-    <button mat-icon-button aria-label="Icon-button with heart icon">
-      <mat-icon>favorite_border</mat-icon>
+    <button (click)="toggleToFavorites()" mat-icon-button aria-label="Icon-button with heart icon">
+      <mat-icon *ngIf="isFavorite">favorite</mat-icon>
+      <mat-icon *ngIf="!isFavorite">favorite_border</mat-icon>
     </button>
     <button mat-icon-button aria-label="Icon-button with heart icon">
       <mat-icon>share</mat-icon>

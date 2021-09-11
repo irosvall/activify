@@ -19,6 +19,7 @@ import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import {MatDividerModule} from "@angular/material/divider";
 import { FrontPageComponent } from './components/front-page/front-page.component';
+import { FavoriteActivitiesComponent } from './components/favorite-activities/favorite-activities.component';
 
 @NgModule({
 	declarations: [
@@ -28,6 +29,7 @@ import { FrontPageComponent } from './components/front-page/front-page.component
     ActivityListComponent,
     HeaderBarComponent,
     FrontPageComponent,
+    FavoriteActivitiesComponent,
   ],
   imports: [
     BrowserModule,

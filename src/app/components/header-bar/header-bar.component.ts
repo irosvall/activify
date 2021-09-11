@@ -14,7 +14,11 @@ export class HeaderBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onNavigateHome() {
+  onNavigateHome(): void {
     this.router.navigate(["/"])
+  }
+
+  onNavigateFavorites(): void {
+    this.router.navigate(["favorites"])
   }
 }
