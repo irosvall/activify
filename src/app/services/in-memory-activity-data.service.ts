@@ -16,6 +16,7 @@ export class InMemoryActivityDataService implements InMemoryDbService {
         extraInformation: "Bring your own helmet and plenty of water. And for an addition fee I'll lend you one of my bikes.",
         location: "Hudiksvall",
         duration: 300,
+        rating: 4.5,
         photos: [
           "assets/activities/bike.jpg",
           "assets/activities/bike2.jpg",
@@ -35,6 +36,7 @@ export class InMemoryActivityDataService implements InMemoryDbService {
         description: "The big waterfall of Ljusdal is a must see for everyone! The trail to the waterfall takes about 30 minutes. Going there you'll walk over wooden bridges and nature roads. It makes you feel close to the nature. Once we are there we'll eat some 'fika' and emjoy the waterfall for around 40 mins or whatever feels right in the moment. I have all the little facts about plants and animals in the area, and I can pinpoint bird species for the interested. The activity is suited for any age that are steady on the foot.",
         location: "Ljusdal",
         duration: 100,
+        rating: 4.1,
         photos: [
           "assets/activities/waterfall.jpg",
           "assets/activities/forrest-track.jpg",

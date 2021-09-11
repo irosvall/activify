@@ -11,5 +11,6 @@ export interface Activity {
 	duration: number,
 	minimumPeople?: number,
 	maximumPeople?: number,
+  rating: number,
   host: Member,
 }
