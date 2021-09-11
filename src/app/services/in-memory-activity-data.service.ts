@@ -22,6 +22,8 @@ export class InMemoryActivityDataService implements InMemoryDbService {
           "assets/activities/bike2.jpg",
           "assets/activities/bike3.jpg",
         ],
+        minimumPeople: 1,
+        maximumPeople: 3,
         host: {
           name: "John Doe",
           username: "user1",

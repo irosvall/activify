@@ -19,8 +19,6 @@
     <mat-card-content class="card-content">
       <p>{{activity.summary}}</p>
       <p>{{activity.description}}</p>
-      <h2>Good to know</h2>
-      <p>{{activity.extraInformation}}</p>
     </mat-card-content>
     <mat-card-actions class="card-actions" align="end">
       <button (click)="toggleToFavorites()" mat-icon-button aria-label="Icon-button with heart icon">
@@ -43,6 +41,15 @@
     </mat-card-header>
     <mat-card-content class="card-content">
       <p>{{activity.host.presentation}}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Good to know</mat-card-title>
+    <mat-card-content class="card-content">
+      <p class="extra-information">{{activity.extraInformation}}</p>
+      <span class="icon-text"><mat-icon>group</mat-icon>  {{activity.minimumPeople}} - {{activity.maximumPeople}} people</span>
+      <span class="icon-text"><mat-icon>timelapse</mat-icon>  {{activity.duration}} minutes</span>
     </mat-card-content>
   </mat-card>
 
