@@ -1,0 +1,12 @@
+.card {
+}
+
+.card-image {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card-actions mat-icon {
+  margin-top: -20px;
+  padding: 0 5px;
+}
