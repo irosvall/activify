@@ -53,6 +53,69 @@ export class InMemoryActivityDataService implements InMemoryDbService {
           profilePicture: "assets/faces/jane.jpg",
         }
       },
+      {
+        id: 3,
+        title: "Sailing",
+        summary: "Be a passenger on my sailboat.",
+        description: "The big waterfall of Ljusdal is a must see for everyone! The trail to the waterfall takes about 30 minutes. Going there you'll walk over wooden bridges and nature roads. It makes you feel close to the nature. Once we are there we'll eat some 'fika' and emjoy the waterfall for around 40 mins or whatever feels right in the moment. I have all the little facts about plants and animals in the area, and I can pinpoint bird species for the interested. The activity is suited for any age that are steady on the foot.",
+        location: "Hudiksvall",
+        duration: 90,
+        rating: 4.8,
+        photos: [
+          "assets/activities/sailing.jpg",
+        ],
+        minimumPeople: 1,
+        maximumPeople: 15,
+        extraInformation: "Wear clothes suitable for the weather. Remember that the paths can be slippery, so a good pair of shoes can be handy.",
+        host: {
+          name: "Jane Doe",
+          username: "user2",
+          presentation: "I am a nature loving person. I know all about every bird species of Sweden and can happily talk about them all. Ljusdal is my hometown and I know much history about it. Don't hesitate to contact me for a tour!",
+          profilePicture: "assets/faces/jane.jpg",
+        }
+      },
+      {
+        id: 4,
+        title: "Discgolf - beginner",
+        summary: "Follow me out on a round of discgolf.",
+        description: "The big waterfall of Ljusdal is a must see for everyone! The trail to the waterfall takes about 30 minutes. Going there you'll walk over wooden bridges and nature roads. It makes you feel close to the nature. Once we are there we'll eat some 'fika' and emjoy the waterfall for around 40 mins or whatever feels right in the moment. I have all the little facts about plants and animals in the area, and I can pinpoint bird species for the interested. The activity is suited for any age that are steady on the foot.",
+        location: "Ånge",
+        duration: 60,
+        rating: 4.1,
+        photos: [
+          "assets/activities/discgolf.jpg",
+        ],
+        minimumPeople: 1,
+        maximumPeople: 15,
+        extraInformation: "Wear clothes suitable for the weather. Remember that the paths can be slippery, so a good pair of shoes can be handy.",
+        host: {
+          name: "Max Chad",
+          username: "user3",
+          presentation: "I am a nature loving person. I know all about every bird species of Sweden and can happily talk about them all. Ljusdal is my hometown and I know much history about it. Don't hesitate to contact me for a tour!",
+          profilePicture: "assets/faces/glasses.jpg",
+        }
+      },
+      {
+        id: 5,
+        title: "Running",
+        summary: "Let's go running together!",
+        description: "The big waterfall of Ljusdal is a must see for everyone! The trail to the waterfall takes about 30 minutes. Going there you'll walk over wooden bridges and nature roads. It makes you feel close to the nature. Once we are there we'll eat some 'fika' and emjoy the waterfall for around 40 mins or whatever feels right in the moment. I have all the little facts about plants and animals in the area, and I can pinpoint bird species for the interested. The activity is suited for any age that are steady on the foot.",
+        location: "Ljusdal",
+        duration: 60,
+        rating: 3.9,
+        photos: [
+          "assets/activities/running.jpg",
+        ],
+        minimumPeople: 1,
+        maximumPeople: 15,
+        extraInformation: "Wear clothes suitable for the weather. Remember that the paths can be slippery, so a good pair of shoes can be handy.",
+        host: {
+          name: "John Doe",
+          username: "user3",
+          presentation: "I am a nature loving person. I know all about every bird species of Sweden and can happily talk about them all. Ljusdal is my hometown and I know much history about it. Don't hesitate to contact me for a tour!",
+          profilePicture: "assets/faces/john.jpg",
+        }
+      },
     ];
     return { activities };
   }
