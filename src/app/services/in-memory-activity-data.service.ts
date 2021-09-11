@@ -19,12 +19,12 @@ export class InMemoryActivityDataService implements InMemoryDbService {
         photos: [
           "assets/activities/bike.jpg",
           "assets/activities/bike2.jpg",
-          "assets/activities/forrest.jpg",
+          "assets/activities/bike3.jpg",
         ],
         host: {
           name: "John Doe",
           username: "user1",
-          presentation: "I'm a happy guy who likes mountain biking. I'm passionate about sharing my passions.",
+          presentation: "I'm a happy guy who likes mountain biking. I'm passionate about sharing my passions so this is a perfect opportunity for me to share one of my passions with you. I'm limiting booking to once-per-month so contact me if you're interested!",
           profilePicture: "assets/faces/john.jpg",
         },
       },
