@@ -1,5 +1,6 @@
 mat-card {
-  margin: 16px;
+  padding: 2em 1.5em;
+  border-radius: unset;
 }
 
 carousel {
@@ -29,6 +30,7 @@ button {
 }
 
 .details-footer-fixed {
+  border-top: 1px solid #dcdcdc;
   position: fixed;
   bottom: 0;
   left: 0;
